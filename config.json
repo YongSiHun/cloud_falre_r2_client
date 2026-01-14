@@ -1,0 +1,4 @@
+{
+    "downloadDirPath": "./download",
+    "uploadTargetFiles": ["./upload_test/test.txt", "./upload_test/test2.txt"]
+}
