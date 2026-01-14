@@ -24,8 +24,7 @@ export default class CloudFlareDownloadService {
     const resourceList = await this.getObjectResource();
 
     if (!resourceList?.length) {
-      console.log("Resoure list is not exist in bucket");
-      return;
+      throw new Error("Resoure list is not exist in bucket");
     }
 
     for await (const resource of resourceList) {
